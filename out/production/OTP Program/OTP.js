@@ -29,11 +29,12 @@ return false;
 <div id="member-box" class="login-wrap text-cetner">
 <div class="form-box">
 
+<!-- login-top -->
 <div class="login-top">
     <h3 class="mb_10 fw-normal" style="font-weight:bold;"><i class="xi-mouse"></i>OTP인증</h3>
 </div>
 
-
+<!-- login-form -->
 <div class="login-form">
     <form action ="${path}/adms/stat/status/list.do" onsubmit="return frmCheck();">
         <ul class="login">
@@ -45,7 +46,7 @@ return false;
         <input type="text" class="form-control" name="encodedKey" value="${encodedKey }" readonly="readonly"/>
 
         <p style="font-weight:bold;">키 인증 번호 :</p>
-        <input type="text" class="form-control" name= "${QrUrl}" readonly="readonly"/>
+        <input type="text" class="form-control" name= "${QrUrl}" readonly="readonly"/></br>
 
         <p style="font-weight:bold;">키 인증 번호 :</p>
         <input type="text" class="form-control" id="code" name="code" placeholder="코드를 입력해주세요" />
